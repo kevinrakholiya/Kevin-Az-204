@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Az_204_Blob_Demo</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\Az-204-Blob-Demo.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\Az-204-Blob-Demo.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Az-204-Blob-Demo.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Az-204-Blob-Demo.sln" />
+    <None Include="obj\Az-204-Blob-Demo.csproj.nuget.g.props" />
+    <None Include="obj\Az-204-Blob-Demo.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\Az-204-Blob-Demo.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\Az-204-Blob-Demo.assets.cache" />
+    <None Include="obj\Debug\net6.0\Az-204-Blob-Demo.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\Az-204-Blob-Demo.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.17.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net6.0\" />
+    <Folder Include="obj\Debug\net6.0\refint\" />
+    <Folder Include="obj\Debug\net6.0\ref\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

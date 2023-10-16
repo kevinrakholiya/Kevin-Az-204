@@ -1,0 +1,64 @@
+﻿@model AZ_204_AzureFunction.Models.FileModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Upload File</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form id="fileForm" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="File" class="control-label"></label>
+                <input asp-for="File" class="form-control" />
+                <span asp-validation-for="File" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+  
+<script>
+    $(document).ready(function () {
+        $("form#fileForm").submit(function (e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            if ($('input', 'form').valid()) {
+                $.ajax({
+                    url: 'http://localhost:7060/api/UploadFile',
+                    type: 'POST',
+                    data: formData,
+                    success: function (result) {
+                        alert("File Upload Successfully");
+                    },
+                    error: function (xhr, resp, text) {
+                        alert("Error Accured During Upload File");
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            }
+
+        });
+    });
+
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ-204-AzureFunctionDemoWebApp", "AZ-204-AzureFunctionDemoWebApp\AZ-204-AzureFunctionDemoWebApp.csproj", "{2D6E1601-B603-4101-89D4-7F45CA90D8E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AZ204AzureFunctionApp", "AZ204AzureFunctionApp\AZ204AzureFunctionApp.csproj", "{A96BA299-BD8C-4F3D-809E-D7A1297E0858}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D6E1601-B603-4101-89D4-7F45CA90D8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6E1601-B603-4101-89D4-7F45CA90D8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6E1601-B603-4101-89D4-7F45CA90D8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6E1601-B603-4101-89D4-7F45CA90D8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96BA299-BD8C-4F3D-809E-D7A1297E0858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96BA299-BD8C-4F3D-809E-D7A1297E0858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96BA299-BD8C-4F3D-809E-D7A1297E0858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96BA299-BD8C-4F3D-809E-D7A1297E0858}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F19B3196-CBB5-4864-93E1-684215C0F2D9}
+	EndGlobalSection
+EndGlobal

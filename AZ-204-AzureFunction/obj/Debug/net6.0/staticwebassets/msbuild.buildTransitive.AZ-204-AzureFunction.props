@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AZ-204-AzureFunction.props" />
+</Project>

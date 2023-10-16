@@ -1,0 +1,45 @@
+﻿@model List<BlobViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <div class="d-flex justify-content-between">
+            <h3>Blob Items In Continer</h3>
+            <a type="button" class="btn btn-primary" asp-action="Index" asp-controller="File">+ Upload File</a>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <td>Blob Name</td>
+                        <td>Last Modified</td>
+                        <td>Tier</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if(Model != null && Model.Any())
+                    {
+                        foreach(var blob in Model)
+                        {
+                            <tr>
+                                <td><a href="@blob.BlobUrl" target="_blank">@blob.BlobName</a></td>
+                                <td>@blob.LastModified</td>
+                                <td>@blob.Tier</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3" class="text-center">No Record Found</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
